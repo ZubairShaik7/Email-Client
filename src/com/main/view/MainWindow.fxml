@@ -10,14 +10,15 @@
 <?import javafx.scene.web.WebView?>
 
 
-<AnchorPane prefHeight="510.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.controller.MainWindowController">
+<AnchorPane prefHeight="510.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar layoutY="7.0" prefHeight="19.0" prefWidth="727.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
               <MenuItem mnemonicParsing="false" text="Close" />
-                  <MenuItem mnemonicParsing="false" text="Open" />
+              <MenuItem mnemonicParsing="false" text="Open" />
+              <MenuItem mnemonicParsing="false" onAction="#addAccountAction" text="Add account" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
