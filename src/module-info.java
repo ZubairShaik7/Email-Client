@@ -8,6 +8,6 @@ module EmailClient {
 
     opens com.main;
     opens com.main.view;
-    //opens com.main.model;
+    opens com.main.model;
     opens com.main.controller;
 }
