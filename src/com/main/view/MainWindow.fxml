@@ -10,7 +10,7 @@
 <?import javafx.scene.web.WebView?>
 
 
-<AnchorPane prefHeight="510.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="510.0" prefWidth="727.0" styleClass="container" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar layoutY="7.0" prefHeight="19.0" prefWidth="727.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
@@ -19,6 +19,7 @@
               <MenuItem mnemonicParsing="false" text="Close" />
               <MenuItem mnemonicParsing="false" text="Open" />
               <MenuItem mnemonicParsing="false" onAction="#addAccountAction" text="Add account" />
+              <MenuItem mnemonicParsing="false" onAction="#composeMessageAction" text="Compose message" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">

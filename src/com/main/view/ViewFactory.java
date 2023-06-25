@@ -1,10 +1,7 @@
 package com.main.view;
 
 import com.main.EmailManager;
-import com.main.controller.BaseController;
-import com.main.controller.LoginWindowController;
-import com.main.controller.MainWindowController;
-import com.main.controller.OptionsWindowController;
+import com.main.controller.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -87,12 +84,26 @@ public class ViewFactory {
         activeStages.remove(stageClose);
     }
 
-    public void updateStyles() {
+    public void updateAllStyles() {
         for (Stage stage : activeStages) {
             Scene scene = stage.getScene();
-            scene.getStylesheets().clear();
-            scene.getStylesheets().add(getClass().getResource(ColorTheme.getCssPath(colorTheme)).toExternalForm());
-            scene.getStylesheets().add(getClass().getResource(FontSize.getCssPath(fontSize)).toExternalForm());
+            updateStyle(scene);
         }
+    }
+
+    private void updateStyle(Scene scene) {
+        scene.getStylesheets().clear();
+        scene.getStylesheets().add(getClass().getResource(ColorTheme.getCssPath(colorTheme)).toExternalForm());
+        scene.getStylesheets().add(getClass().getResource(FontSize.getCssPath(fontSize)).toExternalForm());
+    }
+
+    public void showEmailDetailsWindow(){
+        BaseController controller = new EmailDetailsController(emailManager, this, "EmailDetailsWindow.fxml");
+        initializeStage(controller);
+    }
+
+    public void showComposeMessageWindow() {
+        BaseController controller = new ComposeMessageController(emailManager, this, "ComposeMessageWindow.fxml");
+        initializeStage(controller);
     }
 }

@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EmailClient:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EmailClient_jar</output-path>
+    <root id="archive" name="EmailClient.jar">
+      <element id="module-output" name="EmailClient" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javax.mail.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/javafx-sdk-20.0.1/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/activation.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
